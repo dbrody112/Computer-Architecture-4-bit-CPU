@@ -1,0 +1,41 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000002923ea224d0 .scope module, "add" "add" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "cin";
+    .port_info 3 /OUTPUT 1 "sum";
+    .port_info 4 /OUTPUT 1 "cout";
+o000002923ea56fd8 .functor BUFZ 1, C4<z>; HiZ drive
+o000002923ea57008 .functor BUFZ 1, C4<z>; HiZ drive
+L_000002923eb6daf0 .functor XOR 1, o000002923ea56fd8, o000002923ea57008, C4<0>, C4<0>;
+L_000002923eb6e5d0 .functor AND 1, o000002923ea56fd8, o000002923ea57008, C4<1>, C4<1>;
+o000002923ea57038 .functor BUFZ 1, C4<z>; HiZ drive
+L_000002923eb67070 .functor AND 1, o000002923ea57008, o000002923ea57038, C4<1>, C4<1>;
+L_000002923ea22e40 .functor AND 1, o000002923ea57038, o000002923ea56fd8, C4<1>, C4<1>;
+L_000002923ea22fa0 .functor OR 1, L_000002923eb6e5d0, L_000002923eb67070, C4<0>, C4<0>;
+L_000002923eb67b00 .functor OR 1, L_000002923ea22fa0, L_000002923ea22e40, C4<0>, C4<0>;
+L_000002923eb67840 .functor XOR 1, o000002923ea57038, L_000002923eb6daf0, C4<0>, C4<0>;
+v000002923eb66fd0_0 .net "a", 0 0, o000002923ea56fd8;  0 drivers
+v000002923eb6e530_0 .net "b", 0 0, o000002923ea57008;  0 drivers
+v000002923eb6da50_0 .net "cin", 0 0, o000002923ea57038;  0 drivers
+v000002923ea52ba0_0 .net "cout", 0 0, L_000002923eb67b00;  1 drivers
+v000002923ea52ce0_0 .net "sum", 0 0, L_000002923eb67840;  1 drivers
+v000002923ea52880_0 .net "t1", 0 0, L_000002923eb6daf0;  1 drivers
+v000002923ea52920_0 .net "t2", 0 0, L_000002923eb6e5d0;  1 drivers
+v000002923ea529c0_0 .net "t3", 0 0, L_000002923eb67070;  1 drivers
+v000002923ea52a60_0 .net "t4", 0 0, L_000002923ea22e40;  1 drivers
+v000002923ea52560_0 .net "t5", 0 0, L_000002923ea22fa0;  1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "add.v";
