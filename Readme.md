@@ -1,66 +1,94 @@
-#                                                                ECE-251 - Computer Architecture
+#                               ECE-251 - Computer Architecture
 
 ###                                                               By Colin Hwang and Dan Brody
 
-### <u>Design Decisions</u>
 
 
 
-### <u>Instruction Set Architecture</u>
+
+#### <u>Design Decisions</u>
 
 
 
-### <u>Memory Map</u>
+
+
+#### <u>Instruction Set Architecture</u>
 
 
 
-### <u>Memory</u>
-
-#### **Imem:**
 
 
-
-#### Dmem:
+#### <u>Memory Map</u>
 
 
 
-### <u>Controller</u>
-
-#### Main Decoder:
 
 
+#### <u>Memory</u>
 
-#### ALU Decoder:
+**Imem:**
 
 
 
-### <u>Datapath</u>
+
+
+##### Dmem:
 
 
 
-### <u>Von Neumann Design</u>
+#### <u>Controller</u>
+
+##### Main Decoder:
 
 
 
-### <u>Instruction Programs</u>
+
+
+##### ALU Decoder:
 
 
 
-### <u>GTKwave Timing Diagram for Instructions</u> 
-
-#### RType (register type):
 
 
-
-#### IType (immediate type)
+#### <u>Datapath</u>
 
 
 
-#### Jtype (jump type):
+
+
+#### <u>Von Neumann Design</u>
 
 
 
-### <u>Conclusion and Results</u>
+
+
+#### <u>Instruction Programs</u>
+
+
+
+
+
+#### <u>GTKwave Timing Diagram for Instructions</u> 
+
+##### RType (register type):
+
+
+
+
+
+##### IType (immediate type)
+
+
+
+
+
+##### Jtype (jump type):
+
+
+
+
+
+#### <u>Conclusion and Results</u>
 
 
 
