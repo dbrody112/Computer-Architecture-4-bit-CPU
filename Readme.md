@@ -1,6 +1,4 @@
-#                               ECE-251 - Computer Architecture
-
-###                                                               By Colin Hwang and Dan Brody
+#                               ECE-251 - Computer Architecture - \n 4 bit computer by Colin Hwang and Dan Brody
 
 
 
