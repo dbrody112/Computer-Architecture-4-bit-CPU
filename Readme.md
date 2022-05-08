@@ -6,89 +6,89 @@
 
 
 
-#### <u>Design Decisions</u>
+# <u>Design Decisions</u>
 
 
 
 
 
-#### <u>Instruction Set Architecture</u>
+# <u>Instruction Set Architecture</u>
 
 
 
 
 
-#### <u>Memory Map</u>
+# <u>Memory Map</u>
 
 
 
 
 
-#### <u>Memory</u>
+# <u>Memory</u>
 
-**Imem:**
+### **Imem:**
 
 
 
+​	
 
+### Dmem:
 
-##### Dmem:
 
 
+# <u>Controller</u>
 
-#### <u>Controller</u>
+### Main Decoder:
 
-##### Main Decoder:
 
 
 
 
+### ALU Decoder:
 
-##### ALU Decoder:
 
 
 
 
+# <u>Datapath</u>
 
-#### <u>Datapath</u>
 
 
 
 
+# <u>Von Neumann Design</u>
 
-#### <u>Von Neumann Design</u>
 
 
 
 
+# <u>Instruction Programs</u>
 
-#### <u>Instruction Programs</u>
 
 
 
 
+# <u>GTKwave Timing Diagram for Instructions</u> 
 
-#### <u>GTKwave Timing Diagram for Instructions</u> 
+### RType (register type):
 
-##### RType (register type):
 
 
 
 
+### IType (immediate type)
 
-##### IType (immediate type)
 
 
 
 
+### Jtype (jump type):
 
-##### Jtype (jump type):
 
 
 
 
-
-#### <u>Conclusion and Results</u>
+# <u>Conclusion and Results</u>
 
 
 
