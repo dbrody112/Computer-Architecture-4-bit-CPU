@@ -1,4 +1,4 @@
-#                               ECE-251 - Computer Architecture
+#                                                                ECE-251 - Computer Architecture
 
 ###                                                               By Colin Hwang and Dan Brody
 
