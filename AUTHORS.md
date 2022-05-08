@@ -1,7 +1,7 @@
 <h1 align="center"> Authors of 4-bit-CPU from ECE-251 - Computer Architecture </h1>
 
 <h2> Engineers </h2>
-- Colin Hwang
+- Colin Hwang <br />
 - Dan Brody
 
 <h2> Professor </h2>
