@@ -13,8 +13,7 @@ module cpu #(parameter DWIDTH = 8, IWIDTH = 16)(
   logic       memtoreg, alusrc, regdst, regwrite, jump, pcsrc, zero;
   logic [2:0] alucontrol; 
 
-  controller c(instr[15:13], // opcode in 3 bits
-               instr[3:0],   // function in 4 bits
+  controller c(instr[15:12], // opcode in 4 bits
                zero,
                memtoreg, memwrite, pcsrc,
                alusrc, regdst, regwrite, jump,
