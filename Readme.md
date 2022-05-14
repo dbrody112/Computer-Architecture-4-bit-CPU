@@ -12,7 +12,7 @@
 
 ## <u>Instruction Set Architecture</u>
 
-![](C:\Users\Hcoli\OneDrive\Pictures\ISA.png)
+![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/Colin/Images/ISA.png?raw=true)
 
 
 
