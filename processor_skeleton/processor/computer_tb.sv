@@ -3,6 +3,8 @@
 
 `timescale 1ms/100us // 1ms period, 10us precision
 
+//8 bit computer with 16-but instructions
+
 module computer_tb #(parameter DWIDTH = 8, IWIDTH = 16)();
 
   logic        clk, reset, memwrite;
