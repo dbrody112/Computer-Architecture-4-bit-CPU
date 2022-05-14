@@ -12,7 +12,7 @@
 
 ## <u>Instruction Set Architecture</u>
 
-
+![](C:\Users\Hcoli\OneDrive\Pictures\ISA.png)
 
 
 
