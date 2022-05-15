@@ -7,9 +7,9 @@
 `define NOR 4'd2  
 `define ADD   4'd3  
 `define SUB   4'd4  
-`define MUL   4'd5  
-`define MFHI  4'd6  
-`define MFLO  4'd7  
+`define MOVZ   4'd5  
+`define LSL  4'd6  
+`define LSR  4'd7  
 `define DIV   4'd8  
 `define SLT   4'd9  
 
@@ -39,7 +39,7 @@ module maindec(input logic [3:0] op,
     
     always @*
     case(op)
-        `AND | `OR | `NOR | `ADD | `SUB | `MUL | `MFHI | `MFLO | `DIV | `SLT : controls <= 9'b110000010; //R
+        `AND | `OR | `NOR | `ADD | `SUB | `MOVZ | `LSL | `LSR | `DIV | `SLT : controls <= 9'b110000010; //R
         `LOAD : controls <= 9'b101001000; //load
         `STORE : controls <= 9'b001010000; // write
         `ADDI | `SUBI : controls <= 9'101000000; // I
