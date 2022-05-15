@@ -12,11 +12,20 @@
 
 ## <u>Instruction Set Architecture</u>
 
-![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/Colin/Images/ISA.png?raw=true)
+![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/Colin/Images/isa2.png?raw=true)
 
 <p>
-  Instructions are byte addressable.
-
+  For our ISA, we used 16 bit instructions with three main instruction types: R (register) type, I (immediate) type, and J (jump) type.
+</p>
+<p>
+  For R types, we allocated 4 bits for opcode, two bits for Rs, 6 bits for shamt (shift amount), 2 bits for Rt and 1 bit for Rd. All instructions use 4 bits for opcode, and each will have their own unique opcode (2^4 = 16 "unique" opcodes)
+</p>
+<p>
+  For I types, we allocated 4 bits for opcode, 2 bits for Rs, 2 bits for Rt, and 8 bits for the immediate. This will allow us to represent the immediate with values up to 255.
+</p>
+<p>
+   Lastly, for our J type, we allocated 4 bits for the opcode and 12 bits for the address. 12 bits is more than enough the jump instruction since there are 256 (2^8) memory addresses implemented in our memory architecture.
+</p>
 ## <u>Memory Map</u>
 
 ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/Colin/Images/memory.png?raw=true)
@@ -25,7 +34,7 @@
   Our 8-bit CPU utilizes a Von Neumann memory layout. Since a Von Neumann memory architecture is being used, both Imem (instruction memory) and Dmem (data memory) will be combined into one holistic memory unit but will be modeled as two separate units. Imem will load up the instruction from the unified memory while Dmem is the memory that you read and write from.
   </p>
   <p>
-  Since we are using 16 bit width instructions, each instruction will require 2 bytes to be represented in memory. As seen in the model above, since the address width is 8 bits, we can represent 2^8 = 256 bits in memory. This design is also byte addressable. Therefore, each instruction will take up 2 address numbers in memory. We decided to let both Imem and Dmem to take up 2^6 = 128 bits in memory. Therefore, Imem addresses will go from 0x00 to 0x3E while Dmem addresses will go from where Imem left off from to 0xFe. 
+  Since we are using 16 bit width instructions, each instruction will require 2 bytes to be represented in memory. As seen in the model above, since the address width is 8 bits, we can represent 2^8 = 256 bits in memory. This design is also byte addressable. Therefore, each instruction will take up 2 address numbers in memory. We decided to let both Imem and Dmem to have 2^6 = 64 registers each, which gives each a size of 128 bits. Therefore, Imem addresses will go from 0x00 to 0x3E while Dmem addresses will go from where Imem left off from to 0xFe. 
 
 
 ## <u>Memory</u>
