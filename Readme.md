@@ -48,16 +48,16 @@
 ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/Colin/Images/main_dec.png?raw=true)
     
 <p>
-  Our ISA defines each instruction as having a different opcode. Using 4 bits for our opcode allows for the assignment of 2^4 = 16 unique opcodes for the 16 address we will use. Therefore, we define each instruction and assign the opcode given to the instruction from the ISA. The decoder uses the first four bits of the instruction (the opcode) retrieved from imem to determine which control signals are used. The control signals for each instruction are defined under the section named "Controller". 
+  Our ISA defines each instruction as having a different opcode. Using 4 bits for our opcode allows for the assignment of 2^4 = 16 unique opcodes for the 16 address we will use. Therefore, we define each instruction and assign the opcode given to the instruction from the ISA. The decoder uses the first four bits of the instruction (the opcode) loaded from imem to determine which control signals are used. The control signals for each instruction are defined under the section labeled "Controller Signals". After identifying the control signals for the given instruction, the main decoder will output each control signal. We particarly care about outputing the aluop for the ALU decoder.
+  
 </p>
-
 
 ### ALU Decoder:
 
-  ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/Colin/Images/alu_decoder.png?raw=true)
+  ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/Colin/Images/ALU_deco.png?raw=true)
 <p>
-  
-  </p>
+  The output of the main decoder is the input of the ALU decoder. The ALU decoder takes in two inputs: 
+</p>
 
 ## <u>Datapath</u>
 
