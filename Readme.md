@@ -41,7 +41,8 @@
     
 ### Main Decoder:
     
-    ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/Colin/Images/maindec.png?raw=true)
+![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/Colin/Images/maindec.png?raw=true)
+    
 <p>
   For our main decoder, 
 </p>
