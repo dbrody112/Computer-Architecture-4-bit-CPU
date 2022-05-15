@@ -6,7 +6,7 @@
 
 ## <u>Design Decisions</u>
 <p>
-  For our project, we decided to build a 8-bit CPU using verilog. Therefore, we have a 8 bit ALU operand bit width and and a 8 bit address bus. We also decided that we will be using four registers: 1 saved register and 3 general purpose registers. Instructions will be 16 bits and they will be byte addressable in memory. This means it will take 2 PC (program counter) increments to retrieve and instruction. More on the instruction set architecture will be in the next section.
+  For our project, we decided to build a 8-bit CPU using verilog. Therefore, we have a 8 bit ALU operand bit width and a 8 bit address bus. We also decided that we will be using four registers: 1 saved register and 3 general purpose registers. Instructions will be 16 bits and they will be byte addressable in memory. This means it will take 2 PC (program counter) increments to retrieve and instruction. More on the instruction set architecture will be in the next section.
   </p>
 
 
@@ -48,14 +48,16 @@
 ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/Colin/Images/main_dec.png?raw=true)
     
 <p>
-  Our ISA defines each instruction as having a different opcode. Using 4 bits for our opcode allows for the assignment if 2^4 = 16 unique opcodes for the 16 address we will use. 
+  Our ISA defines each instruction as having a different opcode. Using 4 bits for our opcode allows for the assignment of 2^4 = 16 unique opcodes for the 16 address we will use. Therefore, we define each instruction and assign the opcode given to the instruction from the ISA. The decoder uses the first four bits of the instruction (the opcode) retrieved from imem to determine which control signals are used. The control signals for each instruction are defined under the section named "Controller". 
 </p>
 
 
 ### ALU Decoder:
 
   ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/Colin/Images/alu_decoder.png?raw=true)
-
+<p>
+  
+  </p>
 
 ## <u>Datapath</u>
 
