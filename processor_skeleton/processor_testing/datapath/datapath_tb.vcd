@@ -1,0 +1,33 @@
+$date
+	Sun May 15 15:21:31 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module test $end
+$var wire 8 ! aluout [7:0] $end
+$upscope $end
+$scope module test $end
+$var wire 8 " writedata [7:0] $end
+$upscope $end
+$scope module test $end
+$var wire 1 # zero $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0#
+bx "
+b1 !
+$end
+#1
+b1 "
+#20
+b11 !
+bx "
+#21
+b11 "
+#14805

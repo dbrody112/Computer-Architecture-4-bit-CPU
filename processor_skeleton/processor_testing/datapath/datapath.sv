@@ -3,11 +3,11 @@
 
 module datapath #(parameter DWIDTH = 8, IWIDTH = 16)(
     input  logic              clk, reset,
-    input  logic              memtoreg, pcsrc,
+    input  logic              memtoreg, branch,
     input  logic              alusrc, regdst,
     input  logic              regwrite, jump,
-    input  logic [2:0]        alucontrol,
-    output logic              zero,
+    input  logic [3:0]        alucontrol,
+    output logic              zero,pcsrc,
     output logic [DWIDTH-1:0] pc,
     input  logic [IWIDTH-1:0] instr,
     output logic [DWIDTH-1:0] aluout, writedata,
@@ -27,12 +27,12 @@ module datapath #(parameter DWIDTH = 8, IWIDTH = 16)(
   mux2 wrmux(instr[7:6], instr[9:8], regdst,writereg); //set write for R-type or I-type (regdst true for r)
   regfile rf(clk, regwrite, instr[11:10],instr[9:8],writereg, result, srca, writedata);
   mux2 resmux(readdata,aluout,memtoreg,result);
-  signext se(instr[15:0],signimm); //I or R
+  signext se(instr[7:0],signimm); //I or R
 
   mux2 srcbmux (signimm,writedata,alusrc,srcb); //I or R
-  alu alu(srca,srcab,alucontrol, aluout,zero);
+  alu alu(clk,srca,srcb,alucontrol, aluout,zero);
 
-  pcsrc = branch & zero;
+  assign pcsrc = branch & zero;
 
   // next PC logic
 
