@@ -37,6 +37,8 @@
   <p>
   Since we are using 16 bit width instructions, each instruction will require 2 bytes to be represented in imem. As seen in the memory map above, since the address width is 8 bits, we can represent 2^8 = 256 bits in memory. This design is also byte addressable. Therefore, each instruction will take up 2 address numbers in memory. We decided to let both Imem and Dmem to each a size of 128 bits. Therefore, Imem addresses will take up the bottom 128 bits while Dmem addresses will take up the top 128 bits. Dmem will be given address a, what data to write from memory (wd), and what data to read from memory (rd). When write enabled goes high and is on a positive clock edge, the address and data will be written to dmem. 
 
+## <u>Decoder</u>    
+    
 ### Main Decoder:
 
 
