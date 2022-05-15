@@ -39,12 +39,14 @@
 
 ## <u>Controller</u>    
     
+    ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/Colin/Images/controlsignals.png?raw=true)
+    
 ### Main Decoder:
     
 ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/Colin/Images/main_dec.png?raw=true)
     
 <p>
-  For our main decoder, 
+  Our ISA defines each instruction as having a different opcode. Using 4 bits for our opcode allows for the assignment if 2^4 = 16 unique opcodes for the 16 address we will use. 
 </p>
 
 
@@ -55,6 +57,19 @@
 
 ## <u>Datapath</u>
 
+### RType (register type):
+
+
+
+
+
+### IType (immediate type)
+
+
+
+
+
+### Jtype (jump type):
 
 
 
