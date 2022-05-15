@@ -40,7 +40,7 @@
 ## <u>Controller</u>    
     
     
-    ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/Colin/Images/controlsignals.png?raw=true)
+![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/Colin/Images/controlsignals.png?raw=true)
     
     
 ### Main Decoder:
