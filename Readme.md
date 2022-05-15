@@ -40,7 +40,7 @@
 ## <u>Controller</u>    
     
     
-![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/Colin/Images/controlsignals.png?raw=true)
+![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/main/Images/control_signals.png?raw=true)
     
     
 ### Main Decoder:
@@ -56,7 +56,7 @@
 
   ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/main/Images/ALU_deco.png?raw=true)
 <p>
-  The output of the main decoder is the input of the ALU decoder. The ALU decoder takes in two inputs: 
+  The output of the main decoder is the input of the ALU decoder. The ALU decoder takes in two inputs: the opcode of the instruction and aluop. Just as we did in the main decoder, we must define each register and assign the appropriate 4-bit opcode. 
 </p>
 
 ## <u>Datapath</u>
