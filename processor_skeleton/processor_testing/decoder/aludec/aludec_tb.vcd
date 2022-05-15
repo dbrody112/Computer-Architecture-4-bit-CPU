@@ -1,0 +1,42 @@
+$date
+	Sun May 15 07:34:54 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module test $end
+$var wire 4 ! op [3:0] $end
+$upscope $end
+$scope module test $end
+$var wire 2 " aluop [1:0] $end
+$upscope $end
+$scope module test $end
+$var wire 4 # alucontrol [3:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx #
+bx "
+bx !
+$end
+#10
+b11 #
+b10 "
+b1 !
+#20
+b10 #
+b0 !
+#30
+b0 #
+b0 "
+b1100 !
+#40
+bx #
+b1110 !
+#50
+b1010 !
+#60

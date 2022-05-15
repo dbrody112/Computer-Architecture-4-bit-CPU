@@ -1,0 +1,74 @@
+$date
+	Sat May 14 10:30:55 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100us
+$end
+$scope module computer_tb $end
+$var reg 1 ! clk $end
+$upscope $end
+$scope module computer_tb $end
+$var reg 1 " reset $end
+$upscope $end
+$scope module computer_tb $end
+$var wire 8 # writedata [7:0] $end
+$upscope $end
+$scope module computer_tb $end
+$var wire 8 $ dataadr [7:0] $end
+$upscope $end
+$scope module computer_tb $end
+$var wire 1 % memwrite $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x%
+bx $
+bx #
+1"
+1!
+$end
+#50
+0!
+#100
+1!
+#150
+0!
+#200
+1!
+0"
+#250
+0!
+#300
+1!
+#350
+0!
+#400
+1!
+#450
+0!
+#500
+1!
+#550
+0!
+#600
+1!
+#650
+0!
+#700
+1!
+#750
+0!
+#800
+1!
+#850
+0!
+#900
+1!
+#950
+0!
+#1000
+1!
