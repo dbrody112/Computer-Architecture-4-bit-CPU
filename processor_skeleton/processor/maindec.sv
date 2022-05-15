@@ -27,14 +27,16 @@
 
 //modified start from https://github.com/robmarano/ece251_at_cooper/blob/mips_cpu-single_cycle/MIPS/mips_single_cycle_computer/mips_single_cycle.sv
 
-module maindec(input logic [3:0] op, 
+module maindec(input logic [3:0] op,
+               input logic zero,
                output logic memread, memwrite, 
-               output logic branch, alusrc,
+               output logic pcsrc, alusrc,
                output logic regdst, regwrite,
                output logic [1:0] aluop,
                output logic jump);
     
     logic [8:0] controls;
+    logic branch;
 
     assign {regwrite, regdst, alusrc, branch, memwrite, memread,jump,aluop} = controls;
     
@@ -75,6 +77,8 @@ module maindec(input logic [3:0] op,
         default: controls <= 9'bxxxxxxxxx; 
 
     endcase
+
+    assign pcsrc = branch & zero;
 
     
 

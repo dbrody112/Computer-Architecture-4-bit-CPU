@@ -54,7 +54,8 @@ module test #(parameter DWIDTH = 8, IWIDTH = 16)();
     // Use the monitor task to display the FPGA IO
 
     $dumpfile("datapath_tb.vcd");
-    $dumpvars(0, aluout, writedata,zero);
+    $dumpvars(0,clk,reset,memtoreg,branch,alusrc,regdst,regwrite, jump,alucontrol,pcsrc,zero,
+    pc,instr, aluout, writedata,readdata);
 
     $monitor("time=%3d, aluout=%b, writedata=%b, zero=%b \n",
               $time, aluout, writedata, zero);
@@ -83,6 +84,10 @@ module test #(parameter DWIDTH = 8, IWIDTH = 16)();
     alucontrol = 4'b0000;
     readdata = 8'b00000000;
     instr = 16'b1100101100000010;
+
+    
+
+    #20;
 
     
   end
