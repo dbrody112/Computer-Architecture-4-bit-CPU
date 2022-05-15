@@ -1,4 +1,4 @@
-<h1 align="center">ECE-251 - Computer Architecture - 8-bit Computer <br /> by Colin Hwang and Dan Brody <br />
+<h1 align="center">ECE-251 - Computer Architecture - 8-bit CPU <br /> by Colin Hwang and Dan Brody <br />
 
 
 
@@ -56,11 +56,13 @@
 
   ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/main/Images/ALU_deco.png?raw=true)
 <p>
-  The output of the main decoder is the input of the ALU decoder. The ALU decoder takes in two inputs: the opcode of the instruction and aluop. Just as we did in the main decoder, we must define each register and assign the appropriate 4-bit opcode. 
+  The output of the main decoder is the input of the ALU decoder. The ALU decoder takes in two inputs: the opcode of the instruction and aluop. Just as we did in the main decoder, we must define each register and assign the appropriate 4-bit opcode. Using the aluop input, instructions are assigned an ALU control 4-bit binary number so the ALU will know which operation to use when it recieves the instruction. 
 </p>
 
 ## <u>Datapath</u>
 
+
+  
 ### RType (register type):
 
 
@@ -78,19 +80,20 @@
 
 
 
-## <u>Von Neumann Design</u>
+  
+## <u>Wired-up Block Diagram</u>
 
 
 
 
 
-## <u>Instruction Functionality Programs</u>
+## <u>Functionality Demonstration</u>
 
 
 
 
 
-## <u>GTKwave Timing Diagram for Instructions</u> 
+## <u>GTKwave Timing Diagram Results</u> 
 
 ### RType (register type):
 
