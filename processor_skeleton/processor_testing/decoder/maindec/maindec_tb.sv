@@ -43,7 +43,7 @@ initial begin
 end
 
 initial begin
-    $dumpfile("decoder_tb.vcd");
+    $dumpfile("maindec_tb.vcd");
     $dumpvars(0, op, rand1, regwrite, regdst, alusrc, branch, memwrite, memread,jump,aluop);
 
 end
