@@ -1,0 +1,89 @@
+$date
+	Sun May 15 07:01:25 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module test $end
+$var wire 4 ! op [3:0] $end
+$upscope $end
+$scope module test $end
+$var reg 4 " rand1 [3:0] $end
+$upscope $end
+$scope module test $end
+$var wire 1 # regwrite $end
+$upscope $end
+$scope module test $end
+$var wire 1 $ regdst $end
+$upscope $end
+$scope module test $end
+$var wire 1 % alusrc $end
+$upscope $end
+$scope module test $end
+$var wire 1 & branch $end
+$upscope $end
+$scope module test $end
+$var wire 1 ' memwrite $end
+$upscope $end
+$scope module test $end
+$var wire 1 ( memread $end
+$upscope $end
+$scope module test $end
+$var wire 1 ) jump $end
+$upscope $end
+$scope module test $end
+$var wire 2 * aluop [1:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx *
+x)
+x(
+x'
+x&
+x%
+x$
+x#
+bx "
+bx !
+$end
+#10
+1#
+1$
+0%
+0&
+0'
+0(
+0)
+b10 *
+b1 !
+b1 "
+#20
+b0 !
+b0 "
+#30
+0$
+1%
+b0 *
+b1100 !
+b1100 "
+#40
+0#
+0%
+1&
+b1 *
+b1110 !
+b1110 "
+#50
+1#
+1%
+0&
+1(
+b0 *
+b1010 !
+b1010 "
+#60
