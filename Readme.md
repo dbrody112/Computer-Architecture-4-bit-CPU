@@ -54,7 +54,7 @@
 
 ### ALU Decoder:
 
-  ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/Colin/Images/ALU_deco.png?raw=true)
+  ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/main/Images/ALU_deco.png?raw=true)
 <p>
   The output of the main decoder is the input of the ALU decoder. The ALU decoder takes in two inputs: 
 </p>
