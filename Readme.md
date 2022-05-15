@@ -26,6 +26,7 @@
 <p>
    Lastly, for our J type, we allocated 4 bits for the opcode and 12 bits for the address. 12 bits is more than enough the jump instruction since there are 256 (2^8) memory addresses implemented in our memory architecture.
 </p>
+
 ## <u>Memory Map</u>
 
 ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/Colin/Images/memory.png?raw=true)
