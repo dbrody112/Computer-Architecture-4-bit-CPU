@@ -50,7 +50,7 @@
 
 ### ALU Decoder:
 
-  ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/Colin/Images/alu_dec.png?raw=true)
+  ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/Colin/Images/alu_decoder.png?raw=true)
 
 
 ## <u>Datapath</u>
