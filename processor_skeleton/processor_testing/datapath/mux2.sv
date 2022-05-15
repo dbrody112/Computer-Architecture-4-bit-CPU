@@ -7,7 +7,7 @@ module mux2 #(parameter DWIDTH = 8)(
     output logic [DWIDTH-1:0] y
 );
 
-  assign y = s ? d1 : d0; 
+  assign y = s ? d0 : d1; 
 endmodule
 
 `endif // MUX2

@@ -22,8 +22,21 @@ module datapath #(parameter DWIDTH = 8, IWIDTH = 16)(
   logic [DWIDTH-1:0] addTwoBytesToPC = {DWIDTH{1'b0}} + 2; 
 
   // next PC logic
+
+  mux2 wrmux(instr[7:6], instr[9:8], regdst,writereg); //set write for I-type or R-type
+  regfile rf(clk, regwrite, instr[11:10],instr[9:8],writereg, result, srca, writedata);
+  mux2 resmux(aluout,readdata,memtoreg,result);
+  signext se(instr[15:0],signimm); //I or R
+
+  mux2 srcbmux (writedata,signimm,alusrc,srcb); //I or R
+  alu alu(srca,srcab,alucontrol, aluout,zero);
+
+  pcsrc = branch & zero;
+
+
   flopr #(DWIDTH) pcreg(clk, reset, pcnext, pc);
   adder #(DWIDTH) pcadd1(pc, addTwoBytesToPC, pcplus2);
+  
   sl2   #(DWIDTH) immsh(signimm, signimmsh);
   adder #(DWIDTH) pcadd2(pcplus2, signimmsh, pcbranch);
   mux2  #(DWIDTH) pcbrmux(pcplus2, pcbranch, pcsrc, pcnextbr);
