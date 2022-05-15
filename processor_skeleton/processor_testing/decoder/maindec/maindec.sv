@@ -7,7 +7,7 @@
 `define NOR 4'b0010  
 `define ADD   4'b0011  
 `define SUB   4'b0100  
-`define MOVZ   4'b0101  
+`define XOR   4'b0101  
 `define LSL  4'b0110  
 `define LSR  4'b0111  
 `define DIV   4'b1000 
@@ -51,7 +51,7 @@ module maindec(input logic [3:0] op,
         `NOR: controls <= 9'b110000010; //R
         `ADD: controls <= 9'b110000010; //R
         `SUB: controls <= 9'b110000010; //R
-        `MOVZ: controls <= 9'b110000010; //R
+        `XOR: controls <= 9'b110000010; //R
         `LSL: controls <= 9'b110000010; //R
         `LSR: controls <= 9'b110000010; //R
         `DIV: controls <= 9'b110000010; //R

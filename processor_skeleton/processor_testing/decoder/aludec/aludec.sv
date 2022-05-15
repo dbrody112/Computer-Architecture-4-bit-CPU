@@ -7,7 +7,7 @@
 `define NOR 4'b0010  
 `define ADD   4'b0011  
 `define SUB   4'b0100  
-`define MOVZ   4'b0101  
+`define XOR   4'b0101  
 `define LSL  4'b0110  
 `define LSR  4'b0111  
 `define DIV   4'b1000 
@@ -41,10 +41,10 @@ module aludec(input logic [3:0] op,
             `SUB : alucontrol <=4'b0001;
             `AND : alucontrol <=4'b0010;
             `OR : alucontrol <= 4'b0011;
-            `NOR : alucontrol <= 4'b0010;
-            `MOVZ : alucontrol <= 4'b0100;
-            `DIV : alucontrol <= 4'b0101;
-            `SLT :alucontrol <= 4'b0110;
+            `NOR : alucontrol <= 4'b0100;
+            `XOR : alucontrol <= 4'b0101;
+            `DIV : alucontrol <= 4'b0110;
+            `SLT :alucontrol <= 4'b0111;
             `LSL : alucontrol <= 4'b1000;
             `LSR : alucontrol <= 4'b1001;
         endcase
