@@ -6,7 +6,7 @@
 
 ## <u>Design Decisions</u>
 <p>
-  For our project, we decided to build a 8-bit CPU using verilog. Therefore, we have a 8 bit ALU operand bit width and a 8 bit address bus. We also decided that we will be using four registers: 1 saved register and 3 general purpose registers. Instructions will be 16 bits and they will be byte addressable in memory. This means it will take 2 PC (program counter) increments to retrieve and instruction. More on the instruction set architecture will be in the next section.
+  For our project, we decided to build a 8-bit CPU using verilog. Therefore, we have a 8 bit ALU operand bit width and a 8 bit address bus. We also decided that we will be using four registers: 1 zero register and 3 general purpose registers. Instructions will be 16 bits and they will be byte addressable in memory. This means it will take 2 PC (program counter) increments to retrieve and instruction. More on the instruction set architecture will be in the next section.
   </p>
 
 
