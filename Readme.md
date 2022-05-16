@@ -76,17 +76,18 @@
 
 ## <u>Functionality Demonstration</u>
 
-
-Assembly Language           Instruction
+<p>
+Assembly Language             Instruction
+  </p>
 ```
-ADDI X3, XZR. #0            
-ADDI X1, XZR, n
-ADDI X2, XZR, #1
-SUBI X1, X2, #4
+ADDI X3, XZR, #0              1100110000000000
+ADDI X1, XZR, n               1100010000000101
+ADDI X2, XZR, #1              1100100000000001
+SUBI X1, X2, #4               1110011000000100
 
-SUBI X1, X1, #1
-ADDI, X3, X3, #1
-Branch #2
+SUBI X1, X1, #1               1101010100000001
+ADDI X3, X3, #1               1100111100000001
+B    #2                       1111000000000010
 ```
 
 
