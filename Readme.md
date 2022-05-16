@@ -83,7 +83,7 @@
   
 ## <u>Wired-up Block Diagram</u>
 
-
+![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/main/Images/block.png?raw=true)
 
 
 
