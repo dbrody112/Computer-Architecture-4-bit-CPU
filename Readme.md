@@ -18,13 +18,13 @@
   For our ISA, we used 16 bit instructions with three main instruction types: R (register) type, I (immediate) type, and J (jump) type.
 </p>
 <p>
-  For R types, we allocated 4 bits for opcode, two bits for Rs, 6 bits for shamt (shift amount), 2 bits for Rt and 1 bit for Rd. All instructions use 4 bits for opcode, and each will have their own unique opcode (2^4 = 16 "unique" opcodes)
+  For R types, we allocated 4 bits for opcode, two bits for Rs, 6 bits for shamt (shift amount), 2 bits for Rt and 1 bit for Rd. All instructions use 4 bits for opcode, and each will have their own unique opcode (2^4 = 16 "unique" opcodes). Note that shamt is only useful for 3 bits since our processor is 8-bit but to fill the space we needed a 6-bit shamt
 </p>
 <p>
   For I types, we allocated 4 bits for opcode, 2 bits for Rs, 2 bits for Rt, and 8 bits for the immediate. This will allow us to represent the immediate with values up to 255.
 </p>
 <p>
-   Lastly, for our J type, we allocated 4 bits for the opcode and 12 bits for the address. 12 bits is more than enough the jump instruction since there are 256 (2^8) memory addresses implemented in our memory architecture.
+   Lastly, for our J type, we allocated 4 bits for the opcode and 12 bits for the address. 12 bits is more than enough the jump instruction since there are 256 (2^8) memory addresses implemented in our memory architecture so in referencing addresses we only use the first 8 bits.
 </p>
 
 ## <u>Memory Map</u>
