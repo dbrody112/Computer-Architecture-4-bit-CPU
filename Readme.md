@@ -63,7 +63,7 @@
 
 ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/main/Images/datapath.png?raw=true)
   
- The datapath is where the bits outside of the opcode are decoded into register 1, register 2, etc. and ALU operations occur. The datapath
+ The datapath is where the bits outside of the opcode are decoded into register 1, register 2, etc. and ALU operations occur. The datapath also serves to act as logic for the next instruction. If no branching /jumping occurs, since the length of our address bus is 8 bits and the addresses are byte-addressable, then the next instruction is PC + 2. If any branching/jumping occurs however the program counter can be traced back or moved forward. (refer to the block diagram).
 
 
   
