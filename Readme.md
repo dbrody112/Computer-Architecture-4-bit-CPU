@@ -83,8 +83,11 @@
   
 ## <u>Wired-up Block Diagram</u>
 
-![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/main/Images/blockdiag.png?raw=true)
+![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/main/Images/blockdiagram.png?raw=true)
 
+  <p>
+    Block diagram design derived from figure 4.23 in the textbook used for ECE-251.
+  </p>
 
 
 ## <u>Functionality Demonstration</u>
