@@ -33,5 +33,5 @@
 <h2>Compilation of Assembly Code to Machine Code</h2>
 50% Colin Hwang 50% Dan Brody
 
-<h2>Report and Diagrams<h2>
+<h2>Report and Diagrams</h2>
 75% Colin Hwang 25% Dan Brody
