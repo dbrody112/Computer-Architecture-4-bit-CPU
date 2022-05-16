@@ -61,7 +61,7 @@
 
 ## <u>Datapath</u>
 
-
+![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/main/Images/datapath.png?raw=true)
 
 
   
