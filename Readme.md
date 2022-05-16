@@ -62,22 +62,6 @@
 ## <u>Datapath</u>
 
 
-  
-### RType (register type):
-
-
-
-
-
-### IType (immediate type)
-
-
-
-
-
-### Jtype (jump type):
-
-
 
 
   
@@ -93,6 +77,17 @@
 ## <u>Functionality Demonstration</u>
 
 
+Assembly Language           Instruction
+```
+ADDI X3, XZR. #0            
+ADDI X1, XZR, n
+ADDI X2, XZR, #1
+SUBI X1, X2, #4
+
+SUBI X1, X1, #1
+ADDI, X3, X3, #1
+Branch #2
+```
 
 
 
