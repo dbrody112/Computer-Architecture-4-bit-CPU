@@ -108,7 +108,8 @@ ADD XZR, XZR, XZR             0000000000000000
 
 ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/main/Images/gtkwave.png?raw=true)
   
-  
+ 
+ ## <u>I-type</u>
  
 ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/main/Images/I-type.png?raw=true)
 
