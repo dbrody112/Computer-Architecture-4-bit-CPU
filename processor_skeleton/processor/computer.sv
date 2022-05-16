@@ -1,6 +1,9 @@
 `ifndef COMPUTER
 `define COMPUTER
 
+
+//based on marano implementation of ottobit cpu
+
 // 4-bit computer with 16-bit instructions
 module computer #(parameter DWIDTH = 8, IWIDTH = 16)(
   input  logic              clk, reset, 

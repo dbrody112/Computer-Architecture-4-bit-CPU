@@ -1,6 +1,9 @@
 `ifndef DATAPATH
 `define DATAPATH
 
+
+//based on marano implementation of ottobit cpu
+
 module datapath #(parameter DWIDTH = 8, IWIDTH = 16)(
     input  logic              clk, reset,
     input  logic              memtoreg,pcsrc,

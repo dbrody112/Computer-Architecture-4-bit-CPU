@@ -1,6 +1,9 @@
 `ifndef CONTROLLER
 `define CONTROLLER
 
+
+//based on marano implementation of ottobit cpu
+
 module controller(
   input  logic [3:0] op,    // opcode in 4 bits
   input  logic       zero,

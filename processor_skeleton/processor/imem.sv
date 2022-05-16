@@ -1,6 +1,8 @@
 `ifndef IMEM
 `define IMEM
 
+
+//based on marano implementation of ottobit cpu
 // Modeled after Professor Marano's imem design for ottobit architecture
 module imem #(parameter DWIDTH = 8, IWIDTH = 16)(
   input  logic [5:0] a, // 2^6 Imem will have 64 instructions, 64 bytes, 128 bits

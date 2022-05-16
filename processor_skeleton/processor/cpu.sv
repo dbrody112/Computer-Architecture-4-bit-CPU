@@ -1,6 +1,9 @@
 `ifndef CPU
 `define CPU
 
+
+//based on marano implementation of ottobit cpu
+
 module cpu #(parameter DWIDTH = 8, IWIDTH = 16)(
     input  logic              clk, reset,
     output logic [DWIDTH-1:0] pc,

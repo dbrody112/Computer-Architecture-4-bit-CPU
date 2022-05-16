@@ -2,6 +2,9 @@
 `ifndef DMEM
 `define DMEM
 
+
+//based on marano implementation of ottobit cpu
+
 // Modeled after Professor Marano's dmem design for ottobit architecture
 module dmem #(parameter DWIDTH = 8)(
   input  logic              clk, we,

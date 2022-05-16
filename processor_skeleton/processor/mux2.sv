@@ -1,6 +1,9 @@
 `ifndef MUX2
 `define MUX2
 
+
+//based on marano implementation of ottobit cpu
+
 module mux2 #(parameter DWIDTH = 8)(
     input  logic [DWIDTH-1:0] d0, d1, 
     input  logic              s, 

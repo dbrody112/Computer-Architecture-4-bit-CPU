@@ -23,6 +23,7 @@ module regfile #(parameter DWIDTH = 8, RWIDTH = 3, REGNUM = 8)(
   // on falling edge of clk
 
 
+//based on marano implementation of ottobit cpu
   
 
   always @(posedge clk)
