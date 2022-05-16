@@ -77,18 +77,28 @@
 ## <u>Functionality Demonstration</u>
   
 ```
-Assembly Language             Instruction in the Form of Machine Code
+Assembly Language             Machine Code
   
 ADDI X3, XZR, #0              1100110000000000
 ADDI X1, XZR, n               1100010000000101
 ADDI X2, XZR, #1              1100100000000001
-SUBI X1, X2, #4               1110011000000100
+BEQ X1, X2, #4               1110011000000100
 
 SUBI X1, X1, #1               1101010100000001
 ADDI X3, X3, #1               1100111100000001
 B    #2                       1111000000000010
 ```
-
+<p>
+  <ul>
+    <li>During the first clock cycle, all registers will be set to zero in imem.
+      <li> During the third, fifth, and seventh time cycles, registers X1, X2, and X3 will be set to an immediate value. Recall that it will take two clock cycles to retrieve an instruction.
+    <li> During the ninth time cycle, X1 and X2 will be compared, and if the two values are not equal, BEQ branches to the fourth memory address
+    <li> During the eleventh time cycle, X1 will be subtracted by the immediate value of one.
+    <li> During the thirteenth time cycle, branch will retrieve the instruction at the second memory address.
+    <li> time cycles three through thirteen will be repeated until X1 and X2 are equal and satisify the BEQ instruction.
+  </p>
+  
+  
 ## <u>GTKwave Timing Diagram Results</u> 
 
 ### RType (register type):
