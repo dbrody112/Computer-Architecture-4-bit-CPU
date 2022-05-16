@@ -19,10 +19,10 @@
 70% Colin Hwang 30% Dan Brody
 
 <h3>ALU</h3>
-30% Colin Hwang 75% Dan Brody
+30% Colin Hwang 70% Dan Brody
 
 <h3>Datapath</h3>
-30% Colin Hwang 75% Dan Brody
+30% Colin Hwang 70% Dan Brody
 
 <h3>Controller</h3>
 40% Colin Hwang 60% Dan Brody
