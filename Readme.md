@@ -101,20 +101,7 @@ B    #2                       1111000000000010
   
 ## <u>GTKwave Timing Diagram Results</u> 
 
-### RType (register type):
-
-
-
-
-
-### IType (immediate type)
-
-
-
-
-
-### Jtype (jump type):
-
+![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/main/Images/gtkwave.png?raw=true)
 
 
 
