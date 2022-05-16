@@ -91,9 +91,9 @@ ADD XZR, XZR, XZR             0000000000000000
 ```
 <p>
   <ul>
-    <li>During the first clock cycle, all registers will be set to zero in imem.
+    <li>During the first clock cycle, all registers will be set to arbitrary values xxxxxxxx in imem.
       <li> During the third, fifth, and seventh time cycles, registers X1, X2, and X3 will be set to an immediate value. Recall that it will take two clock cycles to retrieve an instruction.
-    <li> During the ninth time cycle, X1 and X2 will be compared, and if the two values are not equal, BEQ branches to the fourth memory address
+    <li> During the ninth time cycle, X1 and X2 will be compared, and if the two values are not equal, BEQ is not satisfied and the code will continue.
     <li> During the eleventh time cycle, X1 will be subtracted by the immediate value of one.
     <li> During the thirteenth time cycle, branch will retrieve the instruction at the second memory address.
     <li> time cycles three through thirteen will be repeated until X1 and X2 are equal and satisify the BEQ instruction.
