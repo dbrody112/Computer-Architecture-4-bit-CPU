@@ -107,6 +107,10 @@ ADD XZR, XZR, XZR             0000000000000000
 ## <u>GTKwave Timing Diagram Results</u> 
 
 ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/main/Images/gtkwave.png?raw=true)
+  
+  
+ 
+![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/main/Images/ALU_deco.png?raw=true)
 
 
 
