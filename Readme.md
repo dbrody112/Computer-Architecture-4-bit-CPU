@@ -110,7 +110,7 @@ ADD XZR, XZR, XZR             0000000000000000
   
   
  
-![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/main/Images/ALU_deco.png?raw=true)
+![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/main/Images/I-type.png?raw=true)
 
 
 
