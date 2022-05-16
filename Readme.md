@@ -62,6 +62,8 @@
 ## <u>Datapath</u>
 
 ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/main/Images/datapath.png?raw=true)
+  
+ The datapath is where the bits outside of the opcode are decoded into register 1, register 2, etc. and ALU operations occur. The datapath
 
 
   
