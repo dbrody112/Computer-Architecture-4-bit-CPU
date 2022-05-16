@@ -1,6 +1,9 @@
 `ifndef DATAPATH
 `define DATAPATH
 
+
+//based on marano implementation of ottobit cpu
+
 module datapath #(parameter DWIDTH = 8, IWIDTH = 16)(
     input  logic              clk, reset,
     input  logic              memtoreg,pcsrc,
@@ -24,12 +27,26 @@ module datapath #(parameter DWIDTH = 8, IWIDTH = 16)(
   
   //alu logic
 
+ 
+
   mux2 wrmux(instr[7:6], instr[9:8], regdst,writereg); //set write for R-type or I-type (regdst true for r)
   regfile rf(clk, regwrite, instr[11:10],instr[9:8],writereg, result, srca, writedata);
   mux2 resmux(readdata,aluout,memtoreg,result);
   signext se(instr[7:0],signimm); //I or R
 
   mux2 srcbmux (signimm,writedata,alusrc,srcb); //I or R
+
+ always @(posedge clk)
+  $display("aluout : %b", aluout);
+ always @(posedge clk)
+  $display("srca : %b", srca);
+ always @(posedge clk)
+  $display("srcb : %b", srcb);
+always @(posedge clk)
+  $display("pc : %b", pc);
+    
+    
+
   alu alu(clk,srca,srcb,alucontrol, aluout,zero);
 
   
@@ -42,7 +59,8 @@ module datapath #(parameter DWIDTH = 8, IWIDTH = 16)(
   sl2   #(DWIDTH) immsh(signimm, signimmsh);
   adder #(DWIDTH) pcadd2(pcplus2, signimmsh, pcbranch);
   mux2  #(DWIDTH) pcbrmux(pcbranch,pcplus2, pcsrc, pcnextbr);
-  mux2  #(DWIDTH) pcmux({instr[11:0]}, pcnextbr, jump, pcnext);//jump
+  mux2  #(DWIDTH) pcmux({instr[7:0]}, pcnextbr, jump, pcnext);
+  //jump
   // instr[7:0] according to ISA should be instr[11:0] for the 13-bit jump address BUT
   // instr[11:0] means 12-bit address to do an unconditional jump; PC = jump address
   // FYI we do not have enough memory with an 8-bit CPU with byte addressing to use this.

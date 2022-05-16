@@ -1,6 +1,9 @@
 `ifndef CONTROLLER
 `define CONTROLLER
 
+
+//based on marano implementation of ottobit cpu
+
 module controller(
   input  logic [3:0] op,    // opcode in 4 bits
   input  logic       zero,
@@ -16,8 +19,11 @@ module controller(
 
   //add main decoder
 
-  maindec maindec(op,zero, memread, memwrite,branch, pcsrc, alusrc,regdst, regwrite,aluop, jump);
-  aludec aludec(op,aluop,alucontrol)
+  maindec maindec(op,zero, memtoreg, memwrite, pcsrc, alusrc,regdst, regwrite,aluop, jump);
+  aludec aludec(op,aluop,alucontrol);
+
+  always @(alucontrol)
+    $display("alucontrol: %b, op: %b, aluop : %b", alucontrol, op, aluop);
 
   
 endmodule

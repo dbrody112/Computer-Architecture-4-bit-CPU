@@ -1,6 +1,9 @@
 `ifndef FLOPR
 `define FLOPR
 
+
+//based on marano implementation of ottobit cpu
+
 module flopr #(parameter DWIDTH = 8)(
     input  logic             clk, reset,
     input  logic [DWIDTH-1:0] d, 

@@ -2,6 +2,9 @@
 
 //R-Type
 
+
+//based on marano implementation of ottobit cpu
+
 `define AND  4'b0000  
 `define OR  4'b0001  
 `define NOR 4'b0010  
@@ -29,7 +32,7 @@
 
 module maindec(input logic [3:0] op,
                input logic zero,
-               output logic memread, memwrite, 
+               output logic memtoreg, memwrite, 
                output logic pcsrc, alusrc,
                output logic regdst, regwrite,
                output logic [1:0] aluop,
@@ -38,7 +41,7 @@ module maindec(input logic [3:0] op,
     logic [8:0] controls;
     logic branch;
 
-    assign {regwrite, regdst, alusrc, branch, memwrite, memread,jump,aluop} = controls;
+    assign {regwrite, regdst, alusrc, branch, memwrite, memtoreg,jump,aluop} = controls;
     
     
 
@@ -79,6 +82,9 @@ module maindec(input logic [3:0] op,
     endcase
 
     assign pcsrc = branch & zero;
+
+    always @*
+        $display("pcsrc : %b, zero : %b",pcsrc,zero);
 
     
 

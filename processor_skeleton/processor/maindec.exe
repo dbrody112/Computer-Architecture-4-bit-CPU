@@ -8,9 +8,9 @@
 :vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
 :vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
 :vpi_module "C:\iverilog\lib\ivl\v2009.vpi";
-S_0000023537872a90 .scope package, "$unit" "$unit" 2 1;
+S_000001a9cfae2a90 .scope package, "$unit" "$unit" 2 1;
  .timescale 0 0;
-S_0000023537872c20 .scope module, "maindec" "maindec" 3 30;
+S_000001a9cfae2c20 .scope module, "maindec" "maindec" 3 30;
  .timescale 0 0;
     .port_info 0 /INPUT 4 "op";
     .port_info 1 /INPUT 1 "zero";
@@ -22,35 +22,35 @@ S_0000023537872c20 .scope module, "maindec" "maindec" 3 30;
     .port_info 7 /OUTPUT 1 "regwrite";
     .port_info 8 /OUTPUT 2 "aluop";
     .port_info 9 /OUTPUT 1 "jump";
-o00000235378ab1d8 .functor BUFZ 1, C4<z>; HiZ drive
-L_00000235378a4390 .functor AND 1, L_00000235378a39a0, o00000235378ab1d8, C4<1>, C4<1>;
-v00000235378732b0_0 .net *"_ivl_10", 8 0, v00000235378a31d0_0;  1 drivers
-v0000023537872e60_0 .net "aluop", 1 0, L_00000235378a3540;  1 drivers
-v00000235378a3090_0 .net "alusrc", 0 0, L_00000235378a3cc0;  1 drivers
-v00000235378a3130_0 .net "branch", 0 0, L_00000235378a39a0;  1 drivers
-v00000235378a31d0_0 .var "controls", 8 0;
-v00000235378a4080_0 .net "jump", 0 0, L_00000235378a41c0;  1 drivers
-v00000235378a3fe0_0 .net "memread", 0 0, L_00000235378a3720;  1 drivers
-v00000235378a37c0_0 .net "memwrite", 0 0, L_00000235378a3b80;  1 drivers
-o00000235378ab118 .functor BUFZ 4, C4<zzzz>; HiZ drive
-v00000235378a3900_0 .net "op", 3 0, o00000235378ab118;  0 drivers
-v00000235378a3a40_0 .net "pcsrc", 0 0, L_00000235378a4390;  1 drivers
-v00000235378a3860_0 .net "regdst", 0 0, L_00000235378a4120;  1 drivers
-v00000235378a3ae0_0 .net "regwrite", 0 0, L_00000235378a3f40;  1 drivers
-v00000235378a3ea0_0 .net "zero", 0 0, o00000235378ab1d8;  0 drivers
-E_00000235378a9480 .event anyedge, v00000235378a3900_0;
-L_00000235378a3f40 .part v00000235378a31d0_0, 8, 1;
-L_00000235378a4120 .part v00000235378a31d0_0, 7, 1;
-L_00000235378a3cc0 .part v00000235378a31d0_0, 6, 1;
-L_00000235378a39a0 .part v00000235378a31d0_0, 5, 1;
-L_00000235378a3b80 .part v00000235378a31d0_0, 4, 1;
-L_00000235378a3720 .part v00000235378a31d0_0, 3, 1;
-L_00000235378a41c0 .part v00000235378a31d0_0, 2, 1;
-L_00000235378a3540 .part v00000235378a31d0_0, 0, 2;
-    .scope S_0000023537872c20;
+o000001a9cfb1b1d8 .functor BUFZ 1, C4<z>; HiZ drive
+L_000001a9cfb14390 .functor AND 1, L_000001a9cfb13cc0, o000001a9cfb1b1d8, C4<1>, C4<1>;
+v000001a9cfae32b0_0 .net *"_ivl_10", 8 0, v000001a9cfb131d0_0;  1 drivers
+v000001a9cfae2e60_0 .net "aluop", 1 0, L_000001a9cfb141c0;  1 drivers
+v000001a9cfb13090_0 .net "alusrc", 0 0, L_000001a9cfb13ea0;  1 drivers
+v000001a9cfb13130_0 .net "branch", 0 0, L_000001a9cfb13cc0;  1 drivers
+v000001a9cfb131d0_0 .var "controls", 8 0;
+v000001a9cfb13360_0 .net "jump", 0 0, L_000001a9cfb13540;  1 drivers
+v000001a9cfb13900_0 .net "memread", 0 0, L_000001a9cfb13c20;  1 drivers
+v000001a9cfb132c0_0 .net "memwrite", 0 0, L_000001a9cfb13680;  1 drivers
+o000001a9cfb1b118 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v000001a9cfb13f40_0 .net "op", 3 0, o000001a9cfb1b118;  0 drivers
+v000001a9cfb14120_0 .net "pcsrc", 0 0, L_000001a9cfb14390;  1 drivers
+v000001a9cfb139a0_0 .net "regdst", 0 0, L_000001a9cfb14080;  1 drivers
+v000001a9cfb13400_0 .net "regwrite", 0 0, L_000001a9cfb13720;  1 drivers
+v000001a9cfb13a40_0 .net "zero", 0 0, o000001a9cfb1b1d8;  0 drivers
+E_000001a9cfb19900 .event anyedge, v000001a9cfb13f40_0;
+L_000001a9cfb13720 .part v000001a9cfb131d0_0, 8, 1;
+L_000001a9cfb14080 .part v000001a9cfb131d0_0, 7, 1;
+L_000001a9cfb13ea0 .part v000001a9cfb131d0_0, 6, 1;
+L_000001a9cfb13cc0 .part v000001a9cfb131d0_0, 5, 1;
+L_000001a9cfb13680 .part v000001a9cfb131d0_0, 4, 1;
+L_000001a9cfb13c20 .part v000001a9cfb131d0_0, 3, 1;
+L_000001a9cfb13540 .part v000001a9cfb131d0_0, 2, 1;
+L_000001a9cfb141c0 .part v000001a9cfb131d0_0, 0, 2;
+    .scope S_000001a9cfae2c20;
 T_0 ;
-    %wait E_00000235378a9480;
-    %load/vec4 v00000235378a3900_0;
+    %wait E_000001a9cfb19900;
+    %load/vec4 v000001a9cfb13f40_0;
     %dup/vec4;
     %pushi/vec4 0, 0, 4;
     %cmp/u;
@@ -116,71 +116,71 @@ T_0 ;
     %cmp/u;
     %jmp/1 T_0.15, 6;
     %pushi/vec4 511, 511, 9;
-    %assign/vec4 v00000235378a31d0_0, 0;
+    %assign/vec4 v000001a9cfb131d0_0, 0;
     %jmp T_0.17;
 T_0.0 ;
     %pushi/vec4 386, 0, 9;
-    %assign/vec4 v00000235378a31d0_0, 0;
+    %assign/vec4 v000001a9cfb131d0_0, 0;
     %jmp T_0.17;
 T_0.1 ;
     %pushi/vec4 386, 0, 9;
-    %assign/vec4 v00000235378a31d0_0, 0;
+    %assign/vec4 v000001a9cfb131d0_0, 0;
     %jmp T_0.17;
 T_0.2 ;
     %pushi/vec4 386, 0, 9;
-    %assign/vec4 v00000235378a31d0_0, 0;
+    %assign/vec4 v000001a9cfb131d0_0, 0;
     %jmp T_0.17;
 T_0.3 ;
     %pushi/vec4 386, 0, 9;
-    %assign/vec4 v00000235378a31d0_0, 0;
+    %assign/vec4 v000001a9cfb131d0_0, 0;
     %jmp T_0.17;
 T_0.4 ;
     %pushi/vec4 386, 0, 9;
-    %assign/vec4 v00000235378a31d0_0, 0;
+    %assign/vec4 v000001a9cfb131d0_0, 0;
     %jmp T_0.17;
 T_0.5 ;
     %pushi/vec4 386, 0, 9;
-    %assign/vec4 v00000235378a31d0_0, 0;
+    %assign/vec4 v000001a9cfb131d0_0, 0;
     %jmp T_0.17;
 T_0.6 ;
     %pushi/vec4 386, 0, 9;
-    %assign/vec4 v00000235378a31d0_0, 0;
+    %assign/vec4 v000001a9cfb131d0_0, 0;
     %jmp T_0.17;
 T_0.7 ;
     %pushi/vec4 386, 0, 9;
-    %assign/vec4 v00000235378a31d0_0, 0;
+    %assign/vec4 v000001a9cfb131d0_0, 0;
     %jmp T_0.17;
 T_0.8 ;
     %pushi/vec4 386, 0, 9;
-    %assign/vec4 v00000235378a31d0_0, 0;
+    %assign/vec4 v000001a9cfb131d0_0, 0;
     %jmp T_0.17;
 T_0.9 ;
     %pushi/vec4 386, 0, 9;
-    %assign/vec4 v00000235378a31d0_0, 0;
+    %assign/vec4 v000001a9cfb131d0_0, 0;
     %jmp T_0.17;
 T_0.10 ;
     %pushi/vec4 328, 0, 9;
-    %assign/vec4 v00000235378a31d0_0, 0;
+    %assign/vec4 v000001a9cfb131d0_0, 0;
     %jmp T_0.17;
 T_0.11 ;
     %pushi/vec4 80, 0, 9;
-    %assign/vec4 v00000235378a31d0_0, 0;
+    %assign/vec4 v000001a9cfb131d0_0, 0;
     %jmp T_0.17;
 T_0.12 ;
     %pushi/vec4 320, 0, 9;
-    %assign/vec4 v00000235378a31d0_0, 0;
+    %assign/vec4 v000001a9cfb131d0_0, 0;
     %jmp T_0.17;
 T_0.13 ;
     %pushi/vec4 320, 0, 9;
-    %assign/vec4 v00000235378a31d0_0, 0;
+    %assign/vec4 v000001a9cfb131d0_0, 0;
     %jmp T_0.17;
 T_0.14 ;
     %pushi/vec4 33, 0, 9;
-    %assign/vec4 v00000235378a31d0_0, 0;
+    %assign/vec4 v000001a9cfb131d0_0, 0;
     %jmp T_0.17;
 T_0.15 ;
     %pushi/vec4 4, 0, 9;
-    %assign/vec4 v00000235378a31d0_0, 0;
+    %assign/vec4 v000001a9cfb131d0_0, 0;
     %jmp T_0.17;
 T_0.17 ;
     %pop/vec4 1;

@@ -10,18 +10,26 @@ module alu #(parameter WIDTH = 8)(
     output logic       zero             // ZERO flag
 );
 
-  logic [WIDTH-1:0] condinvb, sum;
+  
   reg [WIDTH-1: 0] Rzero = 0;
+  reg [WIDTH-1: 0] Rx = 0;
+  
 
-  assign condinvb = alucontrol[2] ? ~b : b;
-  assign sum = a + condinvb + alucontrol[2];
+  
 
   always @*
-    case (alucontrol[1:0])
-      2'b00: result = a & b;
-      2'b01: result = a | b;
-      2'b10: result = sum;
-      2'b11: result = sum[WIDTH-1];
+    case (alucontrol)
+      4'b0000: result = a + b; //and
+      4'b0001: result = a - b; //sub
+      4'b0010: result = a & b; //and
+      4'b0011: result = a | b; //or
+      4'b0100: result = !(a | b); //nor
+      4'b0101: result = a ^ b; //xor
+      4'b0110 : result = a / b ; //div
+      4'b0111 : result = (a < b) ? 1'b1:1'b0; //slt
+      4'b1000: result = a << b; //LSL
+      4'b1001 : result = a >> b; //LSR
+      default: result = Rx;
     endcase
 
   assign zero = (result == Rzero); // similar to 32'b0
