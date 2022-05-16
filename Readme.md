@@ -110,6 +110,14 @@ ADD XZR, XZR, XZR             0000000000000000
   
  
  ## <u>I-type</u>
+  
+  ```
+Assembly Language             Machine Code
+  
+ADDI X3, XZR, #0              1100110000000000     
+ADDI X1, XZR, n               1100010000000101    
+
+```
  
 ![](https://github.com/dbrody112/Computer-Architecture-4-bit-CPU/blob/main/Images/I-type.png?raw=true)
 
