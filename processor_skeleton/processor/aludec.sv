@@ -33,6 +33,8 @@ module aludec(input logic [3:0] op,
         2'b00 : case(op)
                     `ADDI : alucontrol <= 4'b0000;
                     `SUBI : alucontrol <= 4'b0001;
+                    `LOAD : alucontrol <= 4'b0000;
+                    `STORE : alucontrol <=  4'b0000;
                     default: alucontrol <= 4'bxxxx;
         endcase
         2'b01 : alucontrol <= 3'b001; //sub for BEQ

@@ -16,8 +16,11 @@ module controller(
 
   //add main decoder
 
-  maindec maindec(op,zero, memread, memwrite,branch, pcsrc, alusrc,regdst, regwrite,aluop, jump);
-  aludec aludec(op,aluop,alucontrol)
+  maindec maindec(op,zero, memtoreg, memwrite, pcsrc, alusrc,regdst, regwrite,aluop, jump);
+  aludec aludec(op,aluop,alucontrol);
+
+  always @(alucontrol)
+    $display("alucontrol: %b, op: %b, aluop : %b", alucontrol, op, aluop);
 
   
 endmodule

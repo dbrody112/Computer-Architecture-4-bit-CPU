@@ -22,10 +22,15 @@ module regfile #(parameter DWIDTH = 8, RWIDTH = 3, REGNUM = 8)(
   // note: for pipelined processor, write third port
   // on falling edge of clk
 
+
+  
+
   always @(posedge clk)
     if (we3)
     begin
       $display("writing to register %h value %d",wa3,wd3);
+      $display("result: %b",wd3);
+      $display("writedata at %b : %b", ra2,rf[ra2]);
       if (wa3 != 0)
       begin
         rf[wa3] <= wd3;

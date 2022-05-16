@@ -19,14 +19,14 @@ module computer_tb #(parameter DWIDTH = 8, IWIDTH = 16)();
       firstTest = 1'b0;
       secondTest = 1'b0;
       $dumpfile("computer_tb.vcd");
-      $dumpvars(0,clk,reset,writedata,dataadr,memwrite);
+      $dumpvars(0,clk,reset,writedata,dataadr,memwrite,comp.instr);
       $monitor("0x%h\t0x%h\t0x%h\t%d\t%d",comp.pc,comp.instr,writedata,dataadr,memwrite);
   end
 
   // run circuit for 100 time units
   initial
   begin
-    #100 $finish;
+    #300 $finish;
   end
 
   // initialize test

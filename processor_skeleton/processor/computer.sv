@@ -2,7 +2,7 @@
 `define COMPUTER
 
 // 4-bit computer with 16-bit instructions
-module computer #(parameter DWIDTH = 4, IWIDTH = 16)(
+module computer #(parameter DWIDTH = 8, IWIDTH = 16)(
   input  logic              clk, reset, 
   output logic [DWIDTH-1:0] writedata, dataadr, 
   output logic              memwrite

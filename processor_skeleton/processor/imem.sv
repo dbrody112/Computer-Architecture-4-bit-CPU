@@ -22,7 +22,7 @@ module imem #(parameter DWIDTH = 8, IWIDTH = 16)(
       addr = addr + 6'b1;
     end
     // readin memory file with registers
-    $readmemh("memfile.dat",RAM);
+    $readmemb("memfile.dat",RAM);
     // start at address 0 and go up
     addr = 6'b0;
     for(j=0;j<64;j=j+1)
