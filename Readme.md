@@ -99,7 +99,7 @@ ADD XZR, XZR, XZR             0000000000000000
     <li> During the eleventh time cycle, X1 will be subtracted by the immediate value of one.
     <li> During the thirteenth time cycle, branch will retrieve the instruction at the second memory address.
     <li> During the fifteenth time cycle X3 will be incremented
-    <li> time cycles three through thirteen will be repeated until X1 and X2 are equal and satisfy the BEQ instruction.
+    <li> time cycles three through fifteen will be repeated until X1 and X2 are equal and satisfy the BEQ instruction.
       When they do the loop will be exited.
   </p>
   
